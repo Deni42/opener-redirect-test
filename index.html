@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Test</title>
+</head>
+<body>
+	<script>
+	if (window.opener)
+	{
+		var url = 'https://deni42.github.io/opener-redirect-test/malware.html';
+		window.opener.location = url;
+		document.write('Changed opener tab to: ' + url);
+	}
+	else
+	{
+		document.write('Unable to find opener tab.');
+	}
+	</script>
+</body>
+</html>
